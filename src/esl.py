@@ -115,6 +115,7 @@ class ESL(object):
         if opt not in ['Adam','SGD']:
             optimizer=opt
         loss_func=nn.CrossEntropyLoss()
+        device=self.model.fc_list[0].weight.device
         tbar = trange(num_epochs, desc='Batch loss', leave=True)
         self.model.train()
         for epoch in tbar:
