@@ -27,6 +27,7 @@ The test varies across different datasets, data length, batch sizes, optimizers,
 ```
 
 ![illustration](post.png)
+
 [colab quick start](https://colab.research.google.com/drive/1Ld6-qtoXlMhITrsTiYs2T7LzzeND4Fc0?usp=sharing).
 
 ## More results
