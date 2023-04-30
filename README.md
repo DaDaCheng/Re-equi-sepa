@@ -20,5 +20,8 @@ The test varies across different datasets, data sizes, batch sizes, optimizers, 
 | <img src="figs/9.png" width="1000"> | FakeData   | 1000 | 50     | Adam   |1e-3    |6 |1600|0.1|
 | <img src="figs/12.png" width="1000">| CIFAR10   | 1000 | 100     | Adam   |1e-3    |6 |100|0|
 
-In above plots, `r` represents Prearson correlation coefficient.
-# Re-equi-sepa
+In above plots, `r` represents Pearsonr correlation coefficient.
+
+# Colab
+[Colab fast test](https://colab.research.google.com/drive/1ggVhDlMjLe7eV3Xj4nRMAbjteqCdOifX?usp=sharing).
+
