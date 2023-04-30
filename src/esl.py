@@ -13,8 +13,8 @@ from tqdm import trange
 
 class ESL(object):
     """
-    class provides an implementation of ESL(equi-separation law) in deep learning
-    for various datasets and supports customization of the underlying model.
+    ESL class provides an implementation of ESL(equi-separation law) in deep learning
+    for various datasets and supports customization of the deep neural network.
 
     Args:
         dataset (str, optional): The name of the dataset to be used. Supported datasets are 
@@ -28,7 +28,7 @@ class ESL(object):
 
     Attributes:
         train_loader (DataLoader): DataLoader object for loading and batching training data.
-        model (MLP): The underlying neural network model.
+        model (MLP): The deep neural network model.
 
     Example:
         # Instantiate the ESL class with the MNIST dataset
