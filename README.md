@@ -4,8 +4,36 @@ This repo reimplements and tests the equi-separation law discovered in [A Law of
 
 The test varies across different datasets, data sizes, batch sizes, optimizers, learning rates, DNN depths, DNN widths, and dropout probabilities. The equi-separation law is consistently observed under various hyperparameters and network architectures.
 
+`ESL` class provides an implementation of ESL(equi-separation law) in deep learning
+for various datasets and supports customization of the underlying model.
+Quick start:
+```python
+    from esl import ESL
+    
+    # Instantiate the ESL class with the MNIST dataset
+    esl = ESL(dataset='MNIST', data_length=1000, batch_size=100, data_size=10)
 
-# Results
+    # Set the model architecture
+    esl.set_model(hidden_dim=100, depth=6, width_list=None, p=0.05, device='cpu')
+
+    # Train the model
+    esl.train(lr=1e-3, num_epochs=100, stop_loss=1e-3, opt='Adam')
+
+    # Compute the separation values
+    logD_list = esl.compute_separation()
+
+    # Plot the separation values
+    esl.plot_separation(logD_list)
+```
+
+![Simulated pressure field](figs/0.png)
+
+
+
+
+
+
+# More results
 
 | Results | Dataset | Data size | Batch size | Optimizer | Learning  rate | DNN depth | DNN width | Dropout probability |
 |------------------|--------|--------|--------|--------|--------|--------|--------|--------|
@@ -23,5 +51,6 @@ The test varies across different datasets, data sizes, batch sizes, optimizers, 
 In above plots, `r` represents Pearson correlation coefficient.
 
 # Colab
-[Colab fast test](https://colab.research.google.com/drive/1ggVhDlMjLe7eV3Xj4nRMAbjteqCdOifX?usp=sharing).
+[Stable version](https://colab.research.google.com/drive/1ggVhDlMjLe7eV3Xj4nRMAbjteqCdOifX?usp=sharing).
+[Separated version](https://colab.research.google.com/drive/1ggVhDlMjLe7eV3Xj4nRMAbjteqCdOifX?usp=sharing).
 
