@@ -51,5 +51,5 @@ In above plots, `r` represents Pearson correlation coefficient.
 
 [Stable version](https://colab.research.google.com/drive/1Ld6-qtoXlMhITrsTiYs2T7LzzeND4Fc0?usp=sharing).
 
-[Separated version](https://colab.research.google.com/drive/1ggVhDlMjLe7eV3Xj4nRMAbjteqCdOifX?usp=sharing).
+[Neural Collapse](https://colab.research.google.com/drive/1ggVhDlMjLe7eV3Xj4nRMAbjteqCdOifX?usp=sharing).
 
